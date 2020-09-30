@@ -85,7 +85,7 @@ function game() {
 
     if (roundResult.search('You Win!') > -1) {
       playerScore++;
-    } else if (roundResult.search('You Lose!')) {
+    } else if (roundResult.search('You Lose!') > -1) {
       computerScore++;
     }
   }
@@ -104,4 +104,4 @@ function game() {
   }
 }
 
-game();
+// game();
