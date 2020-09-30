@@ -69,6 +69,13 @@ body {
   font-size: 40px;
 }
 
+.message {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
 .dashboard {
   margin-top: 50px;
   display: flex;

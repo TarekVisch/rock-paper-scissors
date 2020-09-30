@@ -1,13 +1,21 @@
 // Get all necessary DOM nodes
 const images = Array.from(document.querySelectorAll('.card-image'));
+const message = document.querySelector('.message');
+console.log(message);
 const scorePlayer = document.querySelector('.player-score');
 const scoreComputer = document.querySelector('.computer-score');
 const selectionPlayer = document.querySelector('.player-selection');
 const selectionComputer = document.querySelector('.computer-selection');
 
+let playerScore = 0;
+let computerScore = 0;
+
 // Start Game when user clicks on an image
 images.forEach((image) =>
   image.addEventListener('click', () => {
+    if (playerScore >= 5 || computerScore >= 5) {
+      return;
+    }
     game(image.dataset.image);
   })
 );
@@ -74,9 +82,6 @@ function createParagWithText(text) {
   return p;
 }
 
-let playerScore = 0;
-let computerScore = 0;
-
 function game(playerSelect) {
   let playerSelection = capitalize(playerSelect);
   let computerSelection = getComputerSelection();
@@ -89,8 +94,17 @@ function game(playerSelect) {
     computerScore++;
   }
 
+  scorePlayer.textContent = playerScore;
+  scoreComputer.textContent = computerScore;
+  message.textContent = roundResult;
   selectionPlayer.appendChild(createParagWithText(playerSelection));
   selectionComputer.appendChild(createParagWithText(computerSelection));
+
+  if (playerScore >= 5 && computerScore < 5) {
+    message.textContent = 'Game Over. You Win!';
+  } else if (playerScore < 5 && computerScore >= 5) {
+    message.textContent = 'Game Over. You Lose!';
+  }
 }
 
 /* Helper Functions */
