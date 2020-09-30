@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --main-color: #ffea00;
+  --color-sub: #28334aff;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  background-color: var(--main-color);
+}
+
+.heading {
+  margin: 50px 0;
+  text-align: center;
+  color: var(--color-sub);
+  font-size: 55px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  text-align: center;
+}
+
+.card-image {
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-image:hover {
+  top: -5px;
+}
+
+.card-text {
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 25px;
+  color: var(--color-sub);
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 40px;
+}
+
+.dashboard {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.dashboard-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.headindg-sub {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 400;
+}

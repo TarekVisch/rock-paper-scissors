@@ -1,12 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock Paper Scissors</title>
-</head>
-<body>
-    
-    <script src="app.js"></script>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="heading">Rock, Paper, And Scissors</h1>
+    <div class="container">
+      <div class="score">
+        <div class="player-score">0</div>
+        <div style="margin: 0px 50px">-</div>
+        <div class="computer-score">0</div>
+      </div>
+      <div class="d-flex">
+        <div class="card">
+          <div class="card-image" data-image="rock">
+            <img src="images/rock.png" alt="Rock" class="image" />
+          </div>
+          <div class="card-text">Rock</div>
+        </div>
+        <div class="card">
+          <div class="card-image" data-image="paper">
+            <img src="images/paper.png" alt="Paper" class="image" />
+          </div>
+          <div class="card-text">Paper</div>
+        </div>
+        <div class="card">
+          <div class="card-image" data-image="scissors">
+            <img src="images/scissors.png" alt="Scissors" class="image" />
+          </div>
+          <div class="card-text">Scissors</div>
+        </div>
+      </div>
+      <div class="dashboard">
+        <div class="dashboard-side">
+          <h2 class="headindg-sub">Player</h2>
+          <div class="player-selection">
+            <!-- <p>Rock</p> -->
+          </div>
+        </div>
+        <div class="dashboard-side">
+          <h2 class="headindg-sub">Computer</h2>
+          <div class="computer-selection">
+            <!-- <p>Paper</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
