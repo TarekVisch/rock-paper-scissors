@@ -1,7 +1,6 @@
 // Get all necessary DOM nodes
 const images = Array.from(document.querySelectorAll('.card-image'));
 const message = document.querySelector('.message');
-console.log(message);
 const scorePlayer = document.querySelector('.player-score');
 const scoreComputer = document.querySelector('.computer-score');
 const selectionPlayer = document.querySelector('.player-selection');
