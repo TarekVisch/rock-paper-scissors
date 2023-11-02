@@ -88,6 +88,11 @@ body {
   align-items: center;
   margin: 0px 20px;
 }
+.selection{
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse;
+}
 
 .headindg-sub {
   font-size: 35px;
