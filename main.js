@@ -3,8 +3,8 @@ const images = Array.from(document.querySelectorAll('.card-image'));
 const message = document.querySelector('.message');
 const scorePlayer = document.querySelector('.player-score');
 const scoreComputer = document.querySelector('.computer-score');
-const selectionPlayer = document.querySelector('.player-selection');
-const selectionComputer = document.querySelector('.computer-selection');
+const selectionPlayer = document.querySelector('.player');
+const selectionComputer = document.querySelector('.computer');
 
 let playerScore = 0;
 let computerScore = 0;
